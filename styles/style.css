@@ -1,0 +1,263 @@
+* {
+  font-family: "Encode Sans", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72vw;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#orange {
+  color: #f8765e;
+  font-family: "Roboto";
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+
+nav {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+main {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 86vw;
+}
+
+#phone {
+  width: 87%;
+  height: 35vh;
+  background-image: url("../images/orange-search-engine-phone.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: flex-end;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  border: 1px solid #f8765e;
+  width: 89%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input {
+  padding-left: 10px;
+  border: none;
+  font-size: 1.6rem;
+}
+
+#search {
+  border: none;
+  background-color: white;
+}
+
+#content h1 {
+  font-size: 3.2rem;
+  color: #031d5b;
+  text-align: center;
+}
+
+#content p {
+  font-size: 1.6rem;
+  color: #031d5b;
+  text-align: center;
+}
+
+#check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#check > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#check p {
+  font-size: 1.2rem;
+  color: #031d5b;
+  font-weight: 900;
+}
+
+#download {
+  width: 168px;
+  height: 60px;
+  background-color: #031d5b;
+  color: white;
+  border-radius: 12px;
+}
+
+#rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rating p {
+  font-size: 1.2rem;
+  color: #031d5b;
+  font-weight: 900;
+  width: 80px;
+}
+
+footer {
+  padding: 20px 0px;
+  color: #b6bbc9;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #phone {
+    width: 402px;
+    height: 286px;
+    background-image: url("../images/orange-search-engine-tablet.png");
+    align-self: center;
+  }
+  form {
+    width: 81%;
+  }
+
+  #content h1 {
+    font-size: 3.2rem;
+    width: 84%;
+  }
+
+  #content p {
+    font-size: 1.6rem;
+    width: 63%;
+  }
+
+  #check {
+    flex-direction: row;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #check p {
+    font-size: 1.6rem;
+    align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Add your styles for screens wider than 102 pixels here */
+  header {
+    padding: 20px 0px;
+    width: 83vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main {
+    flex-direction: row-reverse;
+    width: 83vw;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #content {
+    width: 42vw;
+  }
+  #phone {
+    width: 623px;
+    height: 444px;
+    background-image: url("../images/orange-search-engine-desktop.png");
+  }
+
+  form {
+    width: 75%;
+    align-self: flex-start;
+  }
+
+  form input {
+    font-weight: 900;
+    font-size: 2.4rem;
+  }
+
+  #content h1 {
+    font-size: 4.8rem;
+    text-align: left;
+
+    /* align-self: flex-start; */
+  }
+
+  #content p {
+    font-size: 2.4rem;
+    text-align: left;
+    /* align-self: flex-start; */
+  }
+
+  #check {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+  }
+
+  #check p {
+    font-size: 2rem;
+    align-self: flex-start;
+  }
+
+  #rating p {
+    font-size: 1.2rem;
+  }
+  #beta {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  footer {
+    font-weight: 900;
+    font-size: 2.4rem;
+  }
+}
